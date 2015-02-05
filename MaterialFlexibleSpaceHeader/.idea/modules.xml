@@ -3,7 +3,6 @@
   <component name="ProjectModuleManager">
     <modules>
       <module fileurl="file://$PROJECT_DIR$/MaterialFlexibleSpaceHeader.iml" filepath="$PROJECT_DIR$/MaterialFlexibleSpaceHeader.iml" />
-      <module fileurl="file://$PROJECT_DIR$/MaterialParallaxHeader.iml" filepath="$PROJECT_DIR$/MaterialParallaxHeader.iml" />
       <module fileurl="file://$PROJECT_DIR$/app/app.iml" filepath="$PROJECT_DIR$/app/app.iml" />
     </modules>
   </component>

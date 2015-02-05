@@ -37,7 +37,7 @@ import pl.snowdog.materialflexiblespaceheader.view.ObservableScrollViewWithFling
  * Created by chomi3 on 09.12.14.
  */
 public class FlexibleSpaceHeaderFragment extends Fragment implements ObservableScrollViewCallbacks {
-    public static final String TAG = "ParallaxHeaderFragment";
+    public static final String TAG = "FlexibleSpaceHeaderFragment";
 
     @InjectView(R.id.observable_sv)
     ObservableScrollViewWithFling mScrollView;
