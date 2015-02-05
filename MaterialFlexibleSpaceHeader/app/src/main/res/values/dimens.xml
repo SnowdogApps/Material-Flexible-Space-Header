@@ -1,0 +1,30 @@
+<resources>
+    <!-- Default screen margins, per the Android Design guidelines. -->
+    <dimen name="activity_horizontal_margin">16dp</dimen>
+    <dimen name="activity_vertical_margin">16dp</dimen>
+    <dimen name="actionBarSize">56dp</dimen>
+    <dimen name="fab_elevation">8dp</dimen>
+    <dimen name="session_detail_max_header_elevation">4dp</dimen>
+    <dimen name="card_view_height">164dp</dimen>
+
+
+    <!-- Action Bar auto-hide-on-scroll behavior parameters -->
+    <dimen name="action_bar_auto_hide_min_y">152dp</dimen>
+    <dimen name="action_bar_auto_hide_sensivity">48dp</dimen>
+
+
+    <dimen name="margin_standard">16dp</dimen>
+    <dimen name="margin_short">8dp</dimen>
+    <dimen name="margin_extra_short">4dp</dimen>
+
+    <dimen name="toolbar_elevation">4dp</dimen>
+
+    <dimen name="toolbar_margin_start">72dp</dimen>
+    <dimen name="flexible_space_height">72dp</dimen>
+
+    <dimen name="parallax_image_height_dim">180dp</dimen>
+    <dimen name="parallax_image_height">180dp</dimen>
+    <dimen name="first_keyline_margin">16dp</dimen>
+    <dimen name="second_keyline_margin">72dp</dimen>
+
+</resources>

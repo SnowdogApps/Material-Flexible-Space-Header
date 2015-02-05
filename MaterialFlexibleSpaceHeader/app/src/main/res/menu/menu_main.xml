@@ -1,0 +1,12 @@
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    tools:context=".MainActivity">
+
+    <item android:title="@string/action_test"
+        android:id="@+id/action_test"
+        app:showAsAction="always"
+        android:icon="@drawable/abc_ic_menu_copy_mtrl_am_alpha"
+        />
+
+</menu>

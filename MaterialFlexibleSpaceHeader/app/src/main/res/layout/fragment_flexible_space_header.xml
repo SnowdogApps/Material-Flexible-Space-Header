@@ -1,0 +1,120 @@
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/root"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+    <pl.snowdog.materialflexiblespaceheader.view.ObservableScrollViewWithFling
+        android:id="@+id/observable_sv"
+        android:layout_height="match_parent"
+        android:layout_width="match_parent"
+        >
+
+        <RelativeLayout
+            android:id="@+id/scroll_view_child"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:clipChildren="false">
+
+            <FrameLayout
+                android:id="@+id/fl_image"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <ImageView
+                    android:id="@+id/image"
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/parallax_image_height"
+                    android:scaleType="fitCenter"
+                    android:src="@drawable/snowdog_logo"
+                    />
+                <LinearLayout
+                    android:orientation="horizontal"
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/parallax_image_height"
+                    android:id="@+id/ll_above_photo"/>
+            </FrameLayout>
+
+            <View
+                android:id="@+id/anchor"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/parallax_image_height"
+                android:minHeight="@dimen/parallax_image_height" />
+
+            <!--Details container-->
+            <LinearLayout android:id="@+id/details_container"
+                android:orientation="vertical"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_below="@id/anchor"
+                android:paddingTop="16dp"
+                android:paddingRight="16dp"
+                android:paddingLeft="72dp"
+                android:paddingBottom="30dp"
+                android:clipToPadding="false"
+                android:background="@color/background_floating_material_light">
+
+                <TextView
+                    android:id="@+id/tv_data"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="@string/lorem_ipsum"
+                    android:textColor="#000"
+                    android:textSize="18dp"/>
+
+            </LinearLayout>
+
+        </RelativeLayout>
+
+    </pl.snowdog.materialflexiblespaceheader.view.ObservableScrollViewWithFling>
+
+    <View
+        android:id="@+id/flexible_space"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:background="@android:color/transparent" />
+
+    <include layout="@layout/view_toolbar"
+        android:id="@+id/toolbar"
+        android:layout_alignParentTop="true"
+        android:layout_height="wrap_content"
+        android:layout_width="match_parent"/>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:paddingLeft="@dimen/toolbar_margin_start">
+
+        <TextView
+            android:id="@+id/title"
+            android:text="Material design"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:ellipsize="end"
+            android:gravity="center_vertical"
+            android:maxLines="1"
+            android:minHeight="?attr/actionBarSize"
+            android:maxHeight="?attr/actionBarSize"
+            android:textColor="@android:color/white"
+            android:background="@android:color/transparent"
+            android:textSize="16sp" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="?attr/actionBarSize"
+                android:background="@android:color/transparent"/>
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/parallax_image_height"
+                android:background="@android:color/transparent" />
+        </LinearLayout>
+    </RelativeLayout>
+
+</FrameLayout>
